@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300&family=Big+Shoulders+Display:wght@600&family=Josefin+Sans:wght@400;600&family=Karla:wght@500&family=Kumbh+Sans:wght@500;600&family=Lexend+Deca:wght@400;500&family=Lexend:wght@500&family=Manrope:wght@300;500&family=Open+Sans:wght@600&family=Outfit:wght@400;500&family=Overpass:wght@500;600&family=Poppins:wght@200;600&family=Roboto:wght@500&family=Rubik&display=swap');
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--DarkBlue);
+}
+
+.card {
+    width: 700px;
+    height: 40%;
+    background-color: var(--DarkGrayishBlue);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    .card--header {
+        color: var(--NeonGreen);
+        text-align: center;
+        font-size: 1.1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        .advice--id {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            .word,
+            .number {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 900;
+            }
+        }
+    }
+    .card--advice--content {
+        text-align: center;
+        padding: 1.2rem;
+        color: var(--LightCyan);
+        font-size: 1.8rem;
+        margin-top: 2.5rem;
+        word-wrap: wrap;
+        font-weight: 800;
+    }
+    img.line--below {
+        position: absolute;
+        bottom: 3rem;
+        left: 17%;
+    }
+    .card--icon {
+        position: absolute;
+        bottom: -2rem;
+        left: 45%;
+        padding: 1rem;
+        background-color: var(--NeonGreen);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
