@@ -15,6 +15,8 @@
 
                 adviceId.innerText = '#' + data.slip.id;
                 adviceArea.innerText = data.slip.advice;
+            } else {
+                alert('Error trying to fetch advise ... ');
             }
         }
         xhr.send();
